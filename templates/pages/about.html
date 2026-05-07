@@ -1,4 +1,9 @@
 {% extends 'base.html' %}
+{% load static %}
+
+{% block css %}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/about.css' %}">
+{% endblock %}
 
 {% block title %}
 About Page
@@ -10,4 +15,9 @@ About Page
         It is a challenging but rewarding field that I really enjoy.
         I am excited to continue learning and growing as a developer, and I am grateful for the opportunity to share my journey with my fellow classmates!
         Also, I love pink, purple and cute things, so I am always looking for new ways to incorporate them into my projects!</p>
+{% endblock %}
+
+
+{% block js %}
+    <script src="{% static 'js/about.js' %}"></script>
 {% endblock %}

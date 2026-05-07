@@ -3,6 +3,7 @@ from django.views.generic import TemplateView
 from django.http import HttpResponse
 
 # Create your views here.
+# Class based views
 class HomePageView(TemplateView):
     template_name = "pages/home.html"
 

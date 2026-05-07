@@ -36,7 +36,14 @@ Running the Django project
 
     python/py manage.py runserver
 
-Django command to create apps:
+## Step 8
+Creating django apps
 
-    Windows: python manage.py startapp NAME_OF_THE_APP"# 112-Django" 
-"# 112-Django" 
+    Both OS: python manage.py startapp NAME_OF_THE_APP
+
+## Models in Django
+
+When we finish a model structure we need to run these commands in order:
+
+    1. python manage.py makemigrations
+    2. python manage.py migrate
