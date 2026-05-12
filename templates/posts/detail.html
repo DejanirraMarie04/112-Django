@@ -1,9 +1,4 @@
 {% extends 'base.html' %}
-{% load static %}
-
-{% block css %}
-    <link rel="stylesheet" href="{% static 'css/detail.css' %}">
-{% endblock %}
 
 {% block title %}
     Post ID: {{ single_post.id }}
@@ -19,8 +14,4 @@
     <hr/>
     <a href="{% url 'post_edit' single_post.id %}" class="btn btn-secondary">Edit Post</a>
     <a href="{% url 'post_delete' single_post.id %}" class="btn btn-danger">Delete Post</a>
-{% endblock %}
-
-{% block js %}
-    <script src="{% static 'js/detail.js' %}"></script>
 {% endblock %}
